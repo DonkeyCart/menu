@@ -1,0 +1,11 @@
+Definition of done 
+
+Function test documented
+End to end test documented
+Have error testing 
+Code doesn't crash 
+Loops don't run forever 
+Code runs smoothly 
+Invalid input doesn't get accepted
+Code gives expected output
+Usability test completed
