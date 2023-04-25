@@ -40,14 +40,18 @@ def getOrder():
 def checkOrder():
   print("is this your order")
   for i in order:
-    print(prices[1][0])
+    print(order[0][0])
   
   check = input("enter Yes to add an item")
   if check == "Yes":
     b = int(input("What would you like to add: "))
+    order.append(b) 
+  elif check == "yes":
+    b = int(input("What would you like to add: "))
     order.append(b)    
   
-  print()
+  else:
+    print()
    
 
 def payment():
