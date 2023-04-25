@@ -17,7 +17,7 @@ def Menu():
 
 
 def getOrder():
-  orderLine=input("what would you like to order: ")
+  orderLine=int(input("what would you like to order: "))
   order.append(orderLine) #this is to make the order have somewhere to be stored
 
   while True: 
@@ -38,18 +38,19 @@ def getOrder():
 
 
 def checkOrder():
-  print("is this your order")
+  print("your oreder is")
   for i in order:
-    print(order[0][0])
+    print("   ",prices[i][0])
   
-  check = input("enter Yes to add an item")
+  check = input("would you like anything else? enter Yes to add an item")
   if check == "Yes":
     b = int(input("What would you like to add: "))
     order.append(b) 
+    print('item added')
   elif check == "yes":
     b = int(input("What would you like to add: "))
     order.append(b)    
-  
+    print('item added')
   else:
     print()
    
